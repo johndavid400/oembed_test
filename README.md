@@ -10,6 +10,8 @@ Oembed Test
 
     export EMBEDLY_KEY='your_key_here'
 
+    source ~/.bashrc
+
 ### Now, set up the project:
 
     git clone git@github.com:johndavid400/oembed_test.git
