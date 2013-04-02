@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Url:</b>
+</p>
+<p>
+  <%= @link.url %>
+</p>
+
+<p>
+  <b>Rendered Html:</b>
+</p>
+<p>
+  <%= @link.html.html_safe %>
+</p>
+
+<p>
+  <b>Raw Html:</b>
+</p>
+<p>
+  <%= @link.html %>
+</p>
+
+
+<%= link_to 'Edit', edit_link_path(@link) %> |
+<%= link_to 'Back', links_path %>
