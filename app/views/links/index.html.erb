@@ -12,7 +12,7 @@
 <% @links.each do |link| %>
   <tr>
     <td><%= link.html.html_safe %></td>
-    <td><%= link.url %></td>
+    <td><%= link_to link.url, "#" %></td>
     <td><%= link_to 'Show', link %></td>
     <td><%= link_to 'Edit', edit_link_path(link) %></td>
     <td><%= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -23,3 +23,6 @@
 <br />
 
 <%= link_to 'New Link', new_link_path %>
+
+<script>
+</script>
